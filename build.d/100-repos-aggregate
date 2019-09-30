@@ -1,9 +1,0 @@
-#!/bin/bash
-set -e
-
-if [ "$AGGREGATE" != true ]; then
-    log WARNING Not aggregating code repositories
-    exit 0
-fi
-
-exec autoaggregate
